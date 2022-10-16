@@ -1,0 +1,246 @@
+2022-10-15 16:36:43,610 INFO org.springframework.boot.StartupInfoLogger [main] Starting LogsJetReceiverApplication using Java 11.0.16.1 on Radoslavs-MacBook-Pro.local with PID 69086 (/Users/radoslavgrn/Downloads/logs-jet-receiver/target/classes started by radoslavgrn in /Users/radoslavgrn/Downloads/logs-jet-receiver)
+2022-10-15 16:36:43,612 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.4, Spring v5.3.23
+2022-10-15 16:36:43,613 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-10-15 16:36:44,067 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Loading 'hazelcast-jet.yaml' from the classpath.
+2022-10-15 16:36:44,072 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] jet.home is /Users/radoslavgrn/Downloads/logs-jet-receiver
+2022-10-15 16:36:44,109 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Loading 'hazelcast.yaml' from the classpath.
+2022-10-15 16:36:44,122 WARN com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2022-10-15 16:36:44,138 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2022-10-15 16:36:44,152 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Picked [192.168.1.7]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2022-10-15 16:36:44,161 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Hazelcast Jet 4.3 (20201020 - a47fbc5) starting at [192.168.1.7]:5701
+2022-10-15 16:36:44,162 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Cluster name: tutorial-jet-starter
+2022-10-15 16:36:44,162 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] 
+	o   o   o   o---o o---o o     o---o   o   o---o o-o-o        o o---o o-o-o
+	|   |  / \     /  |     |     |      / \  |       |          | |       |
+	o---o o---o   o   o-o   |     o     o---o o---o   |          | o-o     |
+	|   | |   |  /    |     |     |     |   |     |   |      \   | |       |
+	o   o o   o o---o o---o o---o o---o o   o o---o   o       o--o o---o   o
+2022-10-15 16:36:44,162 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2022-10-15 16:36:44,264 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Backpressure is disabled
+2022-10-15 16:36:44,415 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Creating MulticastJoiner
+2022-10-15 16:36:44,418 WARN com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2022-10-15 16:36:44,515 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Creating idler with jet.idle.cooperative.min.microseconds=25µs,jet.idle.cooperative.max.microseconds=500µs
+2022-10-15 16:36:44,516 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Creating idler with jet.idle.noncooperative.min.microseconds=25µs,jet.idle.noncooperative.max.microseconds=5000µs
+2022-10-15 16:36:44,540 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Setting number of cooperative threads and default parallelism to 4
+2022-10-15 16:36:44,542 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Starting 12 partition threads and 7 generic threads (1 dedicated for priority tasks)
+2022-10-15 16:36:44,544 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2022-10-15 16:36:44,550 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] [192.168.1.7]:5701 is STARTING
+2022-10-15 16:36:47,599 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.7]:5701 - abd26d1d-a90d-40c7-b5cb-a07710cd3fd1 this
+]
+
+2022-10-15 16:36:47,606 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] [192.168.1.7]:5701 is STARTED
+2022-10-15 16:36:47,848 INFO org.springframework.boot.StartupInfoLogger [main] Started LogsJetReceiverApplication in 4.538 seconds (JVM running for 5.17)
+2022-10-15 16:36:57,139 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.IO.thread-in-0] Initialized new cluster connection between /192.168.1.7:5701 and /192.168.1.7:51259
+2022-10-15 16:37:03,146 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.priority-generic-operation.thread-0] 
+
+Members {size:2, ver:2} [
+	Member [192.168.1.7]:5701 - abd26d1d-a90d-40c7-b5cb-a07710cd3fd1 this
+	Member [192.168.1.7]:5702 - 7d07ca8f-7f40-4510-9202-a2488afcdff3
+]
+
+2022-10-15 16:37:04,414 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.cached.thread-3] Initializing cluster partition table arrangement...
+2022-10-15 16:37:04,504 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.cached.thread-3] Starting job 08cb-360f-6340-0002 based on submit request
+2022-10-15 16:37:04,525 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.cached.thread-3] Didn't find any snapshot to restore for job '08cb-360f-6340-0002', execution 08cb-360f-8300-0001
+2022-10-15 16:37:04,526 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.cached.thread-3] Start executing job '08cb-360f-6340-0002', execution 08cb-360f-8300-0001, execution graph in DOT format:
+digraph DAG {
+	"filesSource(/Users/radoslavgrn/Downloads/logs-jet/src/main/resources/*)" [localParallelism=4];
+	"loggerSink" [localParallelism=1];
+	"filesSource(/Users/radoslavgrn/Downloads/logs-jet/src/main/resources/*)" -> "loggerSink" [queueSize=1024];
+}
+HINT: You can use graphviz or http://viz-js.com to visualize the printed graph.
+2022-10-15 16:37:04,571 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.cached.thread-3] Execution plan for jobId=08cb-360f-6340-0002, jobName='08cb-360f-6340-0002', executionId=08cb-360f-8300-0001 initialized
+2022-10-15 16:37:04,584 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.cached.thread-3] Start execution of job '08cb-360f-6340-0002', execution 08cb-360f-8300-0001 from coordinator [192.168.1.7]:5701
+2022-10-15 16:37:04,609 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4] server.port=8081
+2022-10-15 16:37:04,610 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4] # hazelcast.yaml
+2022-10-15 16:37:04,610 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4] hazelcast:
+2022-10-15 16:37:04,610 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]   cluster-name: tutorial-jet-starter
+2022-10-15 16:37:04,610 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]   network:
+2022-10-15 16:37:04,610 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]     join:
+2022-10-15 16:37:04,610 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]       multicast:
+2022-10-15 16:37:04,611 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]         enabled: true
+2022-10-15 16:37:04,611 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]   jet:
+2022-10-15 16:37:04,611 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]     enabled: true
+2022-10-15 16:37:04,611 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4] <?xml version="1.0" encoding="UTF-8"?>
+2022-10-15 16:37:04,611 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4] <configuration>
+2022-10-15 16:37:04,611 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4] 
+2022-10-15 16:37:04,611 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]   <property name="LOGS" value="./logs" />
+2022-10-15 16:37:04,612 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4] 
+2022-10-15 16:37:04,612 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]   <appender name="Console"
+2022-10-15 16:37:04,612 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]     class="ch.qos.logback.core.ConsoleAppender">
+2022-10-15 16:37:04,612 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]     <layout class="ch.qos.logback.classic.PatternLayout">
+2022-10-15 16:37:04,612 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]       <Pattern>
+2022-10-15 16:37:04,612 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]         %black(%d{ISO8601}) %highlight(%-5level) [%blue(%t)] %yellow(%C{1.}): %msg%n%throwable
+2022-10-15 16:37:04,612 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]       </Pattern>
+2022-10-15 16:37:04,612 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]     </layout>
+2022-10-15 16:37:04,612 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]   </appender>
+2022-10-15 16:37:04,613 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4] 
+2022-10-15 16:37:04,613 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]   <appender name="RollingFile"
+2022-10-15 16:37:04,613 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]     class="ch.qos.logback.core.rolling.RollingFileAppender">
+2022-10-15 16:37:04,613 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]     <file>${LOGS}/spring-boot-logger.log</file>
+2022-10-15 16:37:04,613 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]     <encoder
+2022-10-15 16:37:04,613 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]       class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+2022-10-15 16:37:04,613 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]       <Pattern>%d %p %C{1.} [%t] %m%n</Pattern>
+2022-10-15 16:37:04,613 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]     </encoder>
+2022-10-15 16:37:04,613 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4] 
+2022-10-15 16:37:04,614 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]     <rollingPolicy
+2022-10-15 16:37:04,614 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]       class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+2022-10-15 16:37:04,614 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]       <!-- rollover daily and when the file reaches 10 MegaBytes -->
+2022-10-15 16:37:04,614 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]       <fileNamePattern>${LOGS}/archived/spring-boot-logger-%d{yyyy-MM-dd}.%i.log
+2022-10-15 16:37:04,614 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]       </fileNamePattern>
+2022-10-15 16:37:04,614 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]       <timeBasedFileNamingAndTriggeringPolicy
+2022-10-15 16:37:04,614 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]         class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+2022-10-15 16:37:04,614 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]         <maxFileSize>10MB</maxFileSize>
+2022-10-15 16:37:04,614 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]       </timeBasedFileNamingAndTriggeringPolicy>
+2022-10-15 16:37:04,615 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]     </rollingPolicy>
+2022-10-15 16:37:04,615 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]   </appender>
+2022-10-15 16:37:04,615 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4] 
+2022-10-15 16:37:04,615 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]   <!-- LOG everything at INFO level -->
+2022-10-15 16:37:04,615 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]   <root level="info">
+2022-10-15 16:37:04,615 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]     <appender-ref ref="RollingFile" />
+2022-10-15 16:37:04,615 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]     <appender-ref ref="Console" />
+2022-10-15 16:37:04,615 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]   </root>
+2022-10-15 16:37:04,615 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4] 
+2022-10-15 16:37:04,616 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]   <!-- LOG "demo.jet*" at TRACE level -->
+2022-10-15 16:37:04,616 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]   <logger name="demo.jet" level="trace" additivity="false">
+2022-10-15 16:37:04,616 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]     <appender-ref ref="RollingFile" />
+2022-10-15 16:37:04,616 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]     <appender-ref ref="Console" />
+2022-10-15 16:37:04,616 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]   </logger>
+2022-10-15 16:37:04,616 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4] 
+2022-10-15 16:37:04,616 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4] </configuration>
+2022-10-15 16:37:04,616 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4] hazelcast-jet:
+2022-10-15 16:37:04,617 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]   instance:
+2022-10-15 16:37:04,617 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]     cooperative-thread-count: 4
+2022-10-15 16:37:04,617 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]   edge-defaults:
+2022-10-15 16:37:04,617 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.jet.blocking.thread-4]     queue-size: 2048
+2022-10-15 16:37:04,627 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.upbeat_brattain.cached.thread-3] Execution of job '08cb-360f-6340-0002', execution 08cb-360f-8300-0001 completed successfully
+	Start time: 2022-10-15T16:37:04.505
+	Duration: 117 ms
+	To see additional job metrics enable JobConfig.storeMetricsAfterJobCompletion
+2022-10-15 16:39:16,401 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [SpringApplicationShutdownHook] Custom destroy method 'shutdown' on bean with name 'jetInstance' threw an exception: com.hazelcast.spi.exception.RetryableHazelcastException: HazelcastInstance[[192.168.1.7]:5701] is not active!
+2022-10-15 16:41:53,583 INFO org.springframework.boot.StartupInfoLogger [main] Starting LogsJetReceiverApplication using Java 11.0.16.1 on Radoslavs-MacBook-Pro.local with PID 69125 (/Users/radoslavgrn/Downloads/logs-jet-receiver/target/classes started by radoslavgrn in /Users/radoslavgrn/Downloads/logs-jet-receiver)
+2022-10-15 16:41:53,585 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.4, Spring v5.3.23
+2022-10-15 16:41:53,586 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-10-15 16:41:54,111 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Loading 'hazelcast-jet.yaml' from the classpath.
+2022-10-15 16:41:54,117 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] jet.home is /Users/radoslavgrn/Downloads/logs-jet-receiver
+2022-10-15 16:41:54,156 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Loading 'hazelcast.yaml' from the classpath.
+2022-10-15 16:41:54,170 WARN com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2022-10-15 16:41:54,187 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2022-10-15 16:41:54,201 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Picked [192.168.1.7]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2022-10-15 16:41:54,209 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Hazelcast Jet 4.3 (20201020 - a47fbc5) starting at [192.168.1.7]:5701
+2022-10-15 16:41:54,210 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Cluster name: tutorial-jet-starter
+2022-10-15 16:41:54,210 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] 
+	o   o   o   o---o o---o o     o---o   o   o---o o-o-o        o o---o o-o-o
+	|   |  / \     /  |     |     |      / \  |       |          | |       |
+	o---o o---o   o   o-o   |     o     o---o o---o   |          | o-o     |
+	|   | |   |  /    |     |     |     |   |     |   |      \   | |       |
+	o   o o   o o---o o---o o---o o---o o   o o---o   o       o--o o---o   o
+2022-10-15 16:41:54,210 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2022-10-15 16:41:54,304 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Backpressure is disabled
+2022-10-15 16:41:54,457 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Creating MulticastJoiner
+2022-10-15 16:41:54,460 WARN com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2022-10-15 16:41:54,557 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Creating idler with jet.idle.cooperative.min.microseconds=25µs,jet.idle.cooperative.max.microseconds=500µs
+2022-10-15 16:41:54,557 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Creating idler with jet.idle.noncooperative.min.microseconds=25µs,jet.idle.noncooperative.max.microseconds=5000µs
+2022-10-15 16:41:54,582 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Setting number of cooperative threads and default parallelism to 4
+2022-10-15 16:41:54,585 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Starting 12 partition threads and 7 generic threads (1 dedicated for priority tasks)
+2022-10-15 16:41:54,587 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2022-10-15 16:41:54,593 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] [192.168.1.7]:5701 is STARTING
+2022-10-15 16:41:57,495 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.7]:5701 - 4863abc5-868f-4a7c-93b2-53c43cbdc361 this
+]
+
+2022-10-15 16:41:57,501 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] [192.168.1.7]:5701 is STARTED
+2022-10-15 16:41:57,753 INFO org.springframework.boot.StartupInfoLogger [main] Started LogsJetReceiverApplication in 4.481 seconds (JVM running for 5.149)
+2022-10-15 16:42:07,235 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.IO.thread-in-0] Initialized new cluster connection between /192.168.1.7:5701 and /192.168.1.7:51327
+2022-10-15 16:42:13,241 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.priority-generic-operation.thread-0] 
+
+Members {size:2, ver:2} [
+	Member [192.168.1.7]:5701 - 4863abc5-868f-4a7c-93b2-53c43cbdc361 this
+	Member [192.168.1.7]:5702 - 968d14f4-37da-4d10-8c7d-f48a8c46dc4d
+]
+
+2022-10-15 16:42:14,525 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.cached.thread-5] Initializing cluster partition table arrangement...
+2022-10-15 16:42:14,629 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.cached.thread-5] Starting job 08cb-373e-3b00-0002 based on submit request
+2022-10-15 16:42:14,651 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.cached.thread-5] Didn't find any snapshot to restore for job '08cb-373e-3b00-0002', execution 08cb-373e-5e80-0001
+2022-10-15 16:42:14,651 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.cached.thread-5] Start executing job '08cb-373e-3b00-0002', execution 08cb-373e-5e80-0001, execution graph in DOT format:
+digraph DAG {
+	"filesSource(/Users/radoslavgrn/Downloads/logs-jet/src/main/resources/*)" [localParallelism=4];
+	"loggerSink" [localParallelism=1];
+	"filesSource(/Users/radoslavgrn/Downloads/logs-jet/src/main/resources/*)" -> "loggerSink" [queueSize=1024];
+}
+HINT: You can use graphviz or http://viz-js.com to visualize the printed graph.
+2022-10-15 16:42:14,697 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.cached.thread-5] Execution plan for jobId=08cb-373e-3b00-0002, jobName='08cb-373e-3b00-0002', executionId=08cb-373e-5e80-0001 initialized
+2022-10-15 16:42:14,711 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.cached.thread-5] Start execution of job '08cb-373e-3b00-0002', execution 08cb-373e-5e80-0001 from coordinator [192.168.1.7]:5701
+2022-10-15 16:42:14,723 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4] server.port=8081
+2022-10-15 16:42:14,723 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4] logging.file.name=classpath:logs/spring-boot-app.log
+2022-10-15 16:42:14,723 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4] # hazelcast.yaml
+2022-10-15 16:42:14,723 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4] hazelcast:
+2022-10-15 16:42:14,723 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]   cluster-name: tutorial-jet-starter
+2022-10-15 16:42:14,723 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]   network:
+2022-10-15 16:42:14,724 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]     join:
+2022-10-15 16:42:14,724 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]       multicast:
+2022-10-15 16:42:14,724 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]         enabled: true
+2022-10-15 16:42:14,724 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]   jet:
+2022-10-15 16:42:14,724 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]     enabled: true
+2022-10-15 16:42:14,724 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4] hazelcast-jet:
+2022-10-15 16:42:14,724 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]   instance:
+2022-10-15 16:42:14,724 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]     cooperative-thread-count: 4
+2022-10-15 16:42:14,724 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]   edge-defaults:
+2022-10-15 16:42:14,725 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]     queue-size: 2048
+2022-10-15 16:42:14,725 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4] <?xml version="1.0" encoding="UTF-8"?>
+2022-10-15 16:42:14,725 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4] <configuration>
+2022-10-15 16:42:14,725 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4] 
+2022-10-15 16:42:14,725 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]   <property name="LOGS" value="./logs" />
+2022-10-15 16:42:14,725 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4] 
+2022-10-15 16:42:14,725 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]   <appender name="Console"
+2022-10-15 16:42:14,725 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]     class="ch.qos.logback.core.ConsoleAppender">
+2022-10-15 16:42:14,725 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]     <layout class="ch.qos.logback.classic.PatternLayout">
+2022-10-15 16:42:14,726 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]       <Pattern>
+2022-10-15 16:42:14,726 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]         %black(%d{ISO8601}) %highlight(%-5level) [%blue(%t)] %yellow(%C{1.}): %msg%n%throwable
+2022-10-15 16:42:14,726 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]       </Pattern>
+2022-10-15 16:42:14,726 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]     </layout>
+2022-10-15 16:42:14,726 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]   </appender>
+2022-10-15 16:42:14,726 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4] 
+2022-10-15 16:42:14,726 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]   <appender name="RollingFile"
+2022-10-15 16:42:14,726 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]     class="ch.qos.logback.core.rolling.RollingFileAppender">
+2022-10-15 16:42:14,726 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]     <file>${LOGS}/spring-boot-logger.log</file>
+2022-10-15 16:42:14,727 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]     <encoder
+2022-10-15 16:42:14,727 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]       class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+2022-10-15 16:42:14,727 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]       <Pattern>%d %p %C{1.} [%t] %m%n</Pattern>
+2022-10-15 16:42:14,727 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]     </encoder>
+2022-10-15 16:42:14,727 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4] 
+2022-10-15 16:42:14,727 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]     <rollingPolicy
+2022-10-15 16:42:14,727 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]       class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+2022-10-15 16:42:14,727 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]       <!-- rollover daily and when the file reaches 10 MegaBytes -->
+2022-10-15 16:42:14,727 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]       <fileNamePattern>${LOGS}/archived/spring-boot-logger-%d{yyyy-MM-dd}.%i.log
+2022-10-15 16:42:14,728 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]       </fileNamePattern>
+2022-10-15 16:42:14,728 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]       <timeBasedFileNamingAndTriggeringPolicy
+2022-10-15 16:42:14,728 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]         class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+2022-10-15 16:42:14,728 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]         <maxFileSize>10MB</maxFileSize>
+2022-10-15 16:42:14,728 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]       </timeBasedFileNamingAndTriggeringPolicy>
+2022-10-15 16:42:14,728 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]     </rollingPolicy>
+2022-10-15 16:42:14,728 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]   </appender>
+2022-10-15 16:42:14,728 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4] 
+2022-10-15 16:42:14,729 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]   <!-- LOG everything at INFO level -->
+2022-10-15 16:42:14,729 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]   <root level="info">
+2022-10-15 16:42:14,729 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]     <appender-ref ref="RollingFile" />
+2022-10-15 16:42:14,729 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]     <appender-ref ref="Console" />
+2022-10-15 16:42:14,729 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]   </root>
+2022-10-15 16:42:14,729 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4] 
+2022-10-15 16:42:14,729 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]   <!-- LOG "demo.jet*" at TRACE level -->
+2022-10-15 16:42:14,729 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]   <logger name="demo.jet" level="trace" additivity="false">
+2022-10-15 16:42:14,729 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]     <appender-ref ref="RollingFile" />
+2022-10-15 16:42:14,729 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]     <appender-ref ref="Console" />
+2022-10-15 16:42:14,730 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4]   </logger>
+2022-10-15 16:42:14,730 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4] 
+2022-10-15 16:42:14,730 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.jet.blocking.thread-4] </configuration>
+2022-10-15 16:42:14,740 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.practical_fermi.cached.thread-5] Execution of job '08cb-373e-3b00-0002', execution 08cb-373e-5e80-0001 completed successfully
+	Start time: 2022-10-15T16:42:14.629
+	Duration: 106 ms
+	To see additional job metrics enable JobConfig.storeMetricsAfterJobCompletion

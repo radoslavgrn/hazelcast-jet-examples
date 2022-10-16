@@ -1,0 +1,9 @@
+# hazelcast.yaml
+hazelcast:
+  cluster-name: tutorial-jet-starter
+  network:
+    join:
+      multicast:
+        enabled: true
+  jet:
+    enabled: true
