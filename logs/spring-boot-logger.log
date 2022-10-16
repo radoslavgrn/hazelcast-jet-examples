@@ -1677,3 +1677,304 @@ Members {size:3, ver:3} [
 2022-10-16 14:19:42,766 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [http-nio-8082-exec-1] [192.168.1.7]:5703 [tutorial-jet-starter] [4.3] [192.168.1.7]:5703 is STARTED
 2022-10-16 14:20:06,872 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [hz.ShutdownThread] [192.168.1.7]:5703 [tutorial-jet-starter] [4.3] Running shutdown hook... Current state: ACTIVE
 2022-10-16 14:20:06,912 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [SpringApplicationShutdownHook] Custom destroy method 'shutdown' on bean with name 'jetInstance' threw an exception: com.hazelcast.spi.exception.RetryableHazelcastException: HazelcastInstance[[192.168.1.7]:5702] is not active!
+2022-10-16 17:49:48,894 INFO org.springframework.boot.StartupInfoLogger [main] Starting LogsJetReceiverApplication using Java 11.0.16.1 on Radoslavs-MacBook-Pro.local with PID 76511 (/Users/radoslavgrn/Downloads/logs-jet-receiver/target/classes started by radoslavgrn in /Users/radoslavgrn/Downloads/logs-jet-receiver)
+2022-10-16 17:49:48,896 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.4, Spring v5.3.23
+2022-10-16 17:49:48,897 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-10-16 17:49:49,929 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8082 (http)
+2022-10-16 17:49:49,936 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2022-10-16 17:49:49,936 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-10-16 17:49:49,936 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-16 17:49:50,008 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-10-16 17:49:50,008 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1061 ms
+2022-10-16 17:49:50,277 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Loading 'hazelcast-jet.yaml' from the classpath.
+2022-10-16 17:49:50,285 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] jet.home is /Users/radoslavgrn/Downloads/logs-jet-receiver
+2022-10-16 17:49:50,337 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Loading 'hazelcast.yaml' from the classpath.
+2022-10-16 17:49:50,359 WARN com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2022-10-16 17:49:50,388 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2022-10-16 17:49:50,406 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Picked [192.168.1.7]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2022-10-16 17:49:50,419 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Hazelcast Jet 4.3 (20201020 - a47fbc5) starting at [192.168.1.7]:5701
+2022-10-16 17:49:50,420 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Cluster name: tutorial-jet-starter
+2022-10-16 17:49:50,420 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] 
+	o   o   o   o---o o---o o     o---o   o   o---o o-o-o        o o---o o-o-o
+	|   |  / \     /  |     |     |      / \  |       |          | |       |
+	o---o o---o   o   o-o   |     o     o---o o---o   |          | o-o     |
+	|   | |   |  /    |     |     |     |   |     |   |      \   | |       |
+	o   o o   o o---o o---o o---o o---o o   o o---o   o       o--o o---o   o
+2022-10-16 17:49:50,420 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2022-10-16 17:49:50,553 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Backpressure is disabled
+2022-10-16 17:49:50,750 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Creating MulticastJoiner
+2022-10-16 17:49:50,753 WARN com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2022-10-16 17:49:50,914 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Creating idler with jet.idle.cooperative.min.microseconds=25µs,jet.idle.cooperative.max.microseconds=500µs
+2022-10-16 17:49:50,914 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Creating idler with jet.idle.noncooperative.min.microseconds=25µs,jet.idle.noncooperative.max.microseconds=5000µs
+2022-10-16 17:49:50,954 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Setting number of cooperative threads and default parallelism to 4
+2022-10-16 17:49:50,957 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Starting 12 partition threads and 7 generic threads (1 dedicated for priority tasks)
+2022-10-16 17:49:50,961 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2022-10-16 17:49:50,970 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] [192.168.1.7]:5701 is STARTING
+2022-10-16 17:49:53,870 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.7]:5701 - ac444ed7-37c2-42e6-835e-666cf6eb3e4b this
+]
+
+2022-10-16 17:49:53,880 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] [192.168.1.7]:5701 is STARTED
+2022-10-16 17:49:53,956 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'healthEndpointWebMvcHandlerMapping' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointWebExtensionConfiguration$MvcAdditionalHealthEndpointPathsConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.servlet.AdditionalHealthEndpointPathsWebMvcHandlerMapping]: Factory method 'healthEndpointWebMvcHandlerMapping' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'configurationPropertiesReportEndpoint' defined in class path resource [org/springframework/boot/actuate/autoconfigure/context/properties/ConfigurationPropertiesReportEndpointAutoConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpoint] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@6a6824be]
+2022-10-16 17:49:53,960 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] [192.168.1.7]:5701 is SHUTTING_DOWN
+2022-10-16 17:49:53,964 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Shutting down multicast service...
+2022-10-16 17:49:53,965 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Shutting down connection manager...
+2022-10-16 17:49:53,968 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Shutting down node engine...
+2022-10-16 17:49:54,098 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Destroying node NodeExtension.
+2022-10-16 17:49:54,099 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Hazelcast Shutdown is completed in 137 ms.
+2022-10-16 17:49:54,099 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] [192.168.1.7]:5701 is SHUTDOWN
+2022-10-16 17:49:54,102 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping service [Tomcat]
+2022-10-16 17:49:54,120 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-10-16 17:49:54,146 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'healthEndpointWebMvcHandlerMapping' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointWebExtensionConfiguration$MvcAdditionalHealthEndpointPathsConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.servlet.AdditionalHealthEndpointPathsWebMvcHandlerMapping]: Factory method 'healthEndpointWebMvcHandlerMapping' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'configurationPropertiesReportEndpoint' defined in class path resource [org/springframework/boot/actuate/autoconfigure/context/properties/ConfigurationPropertiesReportEndpointAutoConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpoint] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@6a6824be]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at demo.jet.logsjetreceiver.LogsJetReceiverApplication.main(LogsJetReceiverApplication.java:26)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.servlet.AdditionalHealthEndpointPathsWebMvcHandlerMapping]: Factory method 'healthEndpointWebMvcHandlerMapping' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'configurationPropertiesReportEndpoint' defined in class path resource [org/springframework/boot/actuate/autoconfigure/context/properties/ConfigurationPropertiesReportEndpointAutoConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpoint] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@6a6824be]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'configurationPropertiesReportEndpoint' defined in class path resource [org/springframework/boot/actuate/autoconfigure/context/properties/ConfigurationPropertiesReportEndpointAutoConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpoint] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@6a6824be]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.lambda$createEndpointBean$1(EndpointDiscoverer.java:145)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer$EndpointBean.getBean(EndpointDiscoverer.java:447)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.getFilterEndpoint(EndpointDiscoverer.java:307)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.isFilterMatch(EndpointDiscoverer.java:295)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.isEndpointFiltered(EndpointDiscoverer.java:270)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.isEndpointExposed(EndpointDiscoverer.java:254)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.convertToEndpoints(EndpointDiscoverer.java:181)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.discoverEndpoints(EndpointDiscoverer.java:125)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.getEndpoints(EndpointDiscoverer.java:117)
+	at org.springframework.boot.actuate.autoconfigure.health.HealthEndpointWebExtensionConfiguration.getHealthEndpoint(HealthEndpointWebExtensionConfiguration.java:81)
+	at org.springframework.boot.actuate.autoconfigure.health.HealthEndpointWebExtensionConfiguration.access$000(HealthEndpointWebExtensionConfiguration.java:70)
+	at org.springframework.boot.actuate.autoconfigure.health.HealthEndpointWebExtensionConfiguration$MvcAdditionalHealthEndpointPathsConfiguration.healthEndpointWebMvcHandlerMapping(HealthEndpointWebExtensionConfiguration.java:93)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpoint] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@6a6824be]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.buildLifecycleMetadata(InitDestroyAnnotationBeanPostProcessor.java:232)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.findLifecycleMetadata(InitDestroyAnnotationBeanPostProcessor.java:210)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(InitDestroyAnnotationBeanPostProcessor.java:149)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:305)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	... 43 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/ObjectMapper
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3166)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2309)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467)
+	... 50 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.databind.ObjectMapper
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 54 common frames omitted
+2022-10-16 17:50:47,014 INFO org.springframework.boot.StartupInfoLogger [main] Starting LogsJetReceiverApplication using Java 11.0.16.1 on Radoslavs-MacBook-Pro.local with PID 76535 (/Users/radoslavgrn/Downloads/logs-jet-receiver/target/classes started by radoslavgrn in /Users/radoslavgrn/Downloads/logs-jet-receiver)
+2022-10-16 17:50:47,020 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.4, Spring v5.3.23
+2022-10-16 17:50:47,021 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-10-16 17:50:48,148 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8082 (http)
+2022-10-16 17:50:48,158 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2022-10-16 17:50:48,159 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-10-16 17:50:48,159 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-16 17:50:48,249 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-10-16 17:50:48,250 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1158 ms
+2022-10-16 17:50:48,681 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Loading 'hazelcast-jet.yaml' from the classpath.
+2022-10-16 17:50:48,696 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] jet.home is /Users/radoslavgrn/Downloads/logs-jet-receiver
+2022-10-16 17:50:48,798 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Loading 'hazelcast.yaml' from the classpath.
+2022-10-16 17:50:48,822 WARN com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2022-10-16 17:50:48,852 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2022-10-16 17:50:48,882 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Picked [192.168.1.7]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2022-10-16 17:50:48,903 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Hazelcast Jet 4.3 (20201020 - a47fbc5) starting at [192.168.1.7]:5701
+2022-10-16 17:50:48,904 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Cluster name: tutorial-jet-starter
+2022-10-16 17:50:48,905 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] 
+	o   o   o   o---o o---o o     o---o   o   o---o o-o-o        o o---o o-o-o
+	|   |  / \     /  |     |     |      / \  |       |          | |       |
+	o---o o---o   o   o-o   |     o     o---o o---o   |          | o-o     |
+	|   | |   |  /    |     |     |     |   |     |   |      \   | |       |
+	o   o o   o o---o o---o o---o o---o o   o o---o   o       o--o o---o   o
+2022-10-16 17:50:48,905 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2022-10-16 17:50:49,115 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Backpressure is disabled
+2022-10-16 17:50:49,395 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Creating MulticastJoiner
+2022-10-16 17:50:49,399 WARN com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2022-10-16 17:50:49,534 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Creating idler with jet.idle.cooperative.min.microseconds=25µs,jet.idle.cooperative.max.microseconds=500µs
+2022-10-16 17:50:49,535 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Creating idler with jet.idle.noncooperative.min.microseconds=25µs,jet.idle.noncooperative.max.microseconds=5000µs
+2022-10-16 17:50:49,568 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Setting number of cooperative threads and default parallelism to 4
+2022-10-16 17:50:49,571 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Starting 12 partition threads and 7 generic threads (1 dedicated for priority tasks)
+2022-10-16 17:50:49,573 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2022-10-16 17:50:49,584 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] [192.168.1.7]:5701 is STARTING
+2022-10-16 17:50:52,325 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.7]:5701 - 3e8898c4-e74c-4a34-b197-0a088c85a235 this
+]
+
+2022-10-16 17:50:52,341 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] [192.168.1.7]:5701 is STARTED
+2022-10-16 17:50:52,441 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'healthEndpointWebMvcHandlerMapping' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointWebExtensionConfiguration$MvcAdditionalHealthEndpointPathsConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.servlet.AdditionalHealthEndpointPathsWebMvcHandlerMapping]: Factory method 'healthEndpointWebMvcHandlerMapping' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'configurationPropertiesReportEndpoint' defined in class path resource [org/springframework/boot/actuate/autoconfigure/context/properties/ConfigurationPropertiesReportEndpointAutoConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpoint] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@6a6824be]
+2022-10-16 17:50:52,445 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] [192.168.1.7]:5701 is SHUTTING_DOWN
+2022-10-16 17:50:52,450 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Shutting down multicast service...
+2022-10-16 17:50:52,452 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Shutting down connection manager...
+2022-10-16 17:50:52,455 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Shutting down node engine...
+2022-10-16 17:50:52,491 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Destroying node NodeExtension.
+2022-10-16 17:50:52,492 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Hazelcast Shutdown is completed in 44 ms.
+2022-10-16 17:50:52,493 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] [192.168.1.7]:5701 is SHUTDOWN
+2022-10-16 17:50:52,495 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping service [Tomcat]
+2022-10-16 17:50:52,515 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-10-16 17:50:52,552 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'healthEndpointWebMvcHandlerMapping' defined in class path resource [org/springframework/boot/actuate/autoconfigure/health/HealthEndpointWebExtensionConfiguration$MvcAdditionalHealthEndpointPathsConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.servlet.AdditionalHealthEndpointPathsWebMvcHandlerMapping]: Factory method 'healthEndpointWebMvcHandlerMapping' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'configurationPropertiesReportEndpoint' defined in class path resource [org/springframework/boot/actuate/autoconfigure/context/properties/ConfigurationPropertiesReportEndpointAutoConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpoint] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@6a6824be]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at demo.jet.logsjetreceiver.LogsJetReceiverApplication.main(LogsJetReceiverApplication.java:26)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.web.servlet.AdditionalHealthEndpointPathsWebMvcHandlerMapping]: Factory method 'healthEndpointWebMvcHandlerMapping' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'configurationPropertiesReportEndpoint' defined in class path resource [org/springframework/boot/actuate/autoconfigure/context/properties/ConfigurationPropertiesReportEndpointAutoConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpoint] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@6a6824be]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'configurationPropertiesReportEndpoint' defined in class path resource [org/springframework/boot/actuate/autoconfigure/context/properties/ConfigurationPropertiesReportEndpointAutoConfiguration.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpoint] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@6a6824be]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.lambda$createEndpointBean$1(EndpointDiscoverer.java:145)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer$EndpointBean.getBean(EndpointDiscoverer.java:447)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.getFilterEndpoint(EndpointDiscoverer.java:307)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.isFilterMatch(EndpointDiscoverer.java:295)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.isEndpointFiltered(EndpointDiscoverer.java:270)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.isEndpointExposed(EndpointDiscoverer.java:254)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.convertToEndpoints(EndpointDiscoverer.java:181)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.discoverEndpoints(EndpointDiscoverer.java:125)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.getEndpoints(EndpointDiscoverer.java:117)
+	at org.springframework.boot.actuate.autoconfigure.health.HealthEndpointWebExtensionConfiguration.getHealthEndpoint(HealthEndpointWebExtensionConfiguration.java:81)
+	at org.springframework.boot.actuate.autoconfigure.health.HealthEndpointWebExtensionConfiguration.access$000(HealthEndpointWebExtensionConfiguration.java:70)
+	at org.springframework.boot.actuate.autoconfigure.health.HealthEndpointWebExtensionConfiguration$MvcAdditionalHealthEndpointPathsConfiguration.healthEndpointWebMvcHandlerMapping(HealthEndpointWebExtensionConfiguration.java:93)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpoint] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@6a6824be]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.buildLifecycleMetadata(InitDestroyAnnotationBeanPostProcessor.java:232)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.findLifecycleMetadata(InitDestroyAnnotationBeanPostProcessor.java:210)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(InitDestroyAnnotationBeanPostProcessor.java:149)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:305)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	... 43 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/ObjectMapper
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3166)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2309)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467)
+	... 50 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.databind.ObjectMapper
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 54 common frames omitted
+2022-10-16 17:52:46,629 INFO org.springframework.boot.StartupInfoLogger [main] Starting LogsJetReceiverApplication using Java 11.0.16.1 on Radoslavs-MacBook-Pro.local with PID 76573 (/Users/radoslavgrn/Downloads/logs-jet-receiver/target/classes started by radoslavgrn in /Users/radoslavgrn/Downloads/logs-jet-receiver)
+2022-10-16 17:52:46,637 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.4, Spring v5.3.23
+2022-10-16 17:52:46,640 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-10-16 17:52:47,863 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8082 (http)
+2022-10-16 17:52:47,871 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2022-10-16 17:52:47,872 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-10-16 17:52:47,872 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-16 17:52:47,951 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-10-16 17:52:47,952 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1215 ms
+2022-10-16 17:52:48,356 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Loading 'hazelcast-jet.yaml' from the classpath.
+2022-10-16 17:52:48,367 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] jet.home is /Users/radoslavgrn/Downloads/logs-jet-receiver
+2022-10-16 17:52:48,424 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Loading 'hazelcast.yaml' from the classpath.
+2022-10-16 17:52:48,445 WARN com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2022-10-16 17:52:48,470 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2022-10-16 17:52:48,485 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Picked [192.168.1.7]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2022-10-16 17:52:48,497 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Hazelcast Jet 4.3 (20201020 - a47fbc5) starting at [192.168.1.7]:5701
+2022-10-16 17:52:48,498 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Cluster name: tutorial-jet-starter
+2022-10-16 17:52:48,498 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] 
+	o   o   o   o---o o---o o     o---o   o   o---o o-o-o        o o---o o-o-o
+	|   |  / \     /  |     |     |      / \  |       |          | |       |
+	o---o o---o   o   o-o   |     o     o---o o---o   |          | o-o     |
+	|   | |   |  /    |     |     |     |   |     |   |      \   | |       |
+	o   o o   o o---o o---o o---o o---o o   o o---o   o       o--o o---o   o
+2022-10-16 17:52:48,498 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Copyright (c) 2008-2020, Hazelcast, Inc. All Rights Reserved.
+2022-10-16 17:52:48,645 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Backpressure is disabled
+2022-10-16 17:52:48,833 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Creating MulticastJoiner
+2022-10-16 17:52:48,836 WARN com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2022-10-16 17:52:48,983 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Creating idler with jet.idle.cooperative.min.microseconds=25µs,jet.idle.cooperative.max.microseconds=500µs
+2022-10-16 17:52:48,983 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Creating idler with jet.idle.noncooperative.min.microseconds=25µs,jet.idle.noncooperative.max.microseconds=5000µs
+2022-10-16 17:52:49,025 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Setting number of cooperative threads and default parallelism to 4
+2022-10-16 17:52:49,029 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Starting 12 partition threads and 7 generic threads (1 dedicated for priority tasks)
+2022-10-16 17:52:49,032 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2022-10-16 17:52:49,039 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] [192.168.1.7]:5701 is STARTING
+2022-10-16 17:52:51,952 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.7]:5701 - e8a4c60f-597c-4e5d-9e97-51c25a4d5ee2 this
+]
+
+2022-10-16 17:52:51,962 INFO com.hazelcast.logging.StandardLoggerFactory$StandardLogger [main] [192.168.1.7]:5701 is STARTED
+2022-10-16 17:52:52,145 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-10-16 17:52:52,171 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
+2022-10-16 17:52:52,183 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8082 (http) with context path '/app'
+2022-10-16 17:52:52,202 INFO org.springframework.boot.StartupInfoLogger [main] Started LogsJetReceiverApplication in 6.032 seconds (JVM running for 6.687)
+2022-10-16 17:52:52,442 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(3)-192.168.1.7] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-16 17:52:52,443 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-192.168.1.7] Initializing Servlet 'dispatcherServlet'
+2022-10-16 17:52:52,444 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-192.168.1.7] Completed initialization in 1 ms
+2022-10-16 17:52:58,209 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [SpringApplicationShutdownHook] Custom destroy method 'shutdown' on bean with name 'jetInstance' threw an exception: com.hazelcast.spi.exception.RetryableHazelcastException: HazelcastInstance[[192.168.1.7]:5701] is not active!
