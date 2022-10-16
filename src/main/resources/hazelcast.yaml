@@ -1,5 +1,12 @@
 # hazelcast.yaml
 hazelcast:
+  ringbuffer:
+    logs-file:
+      capacity: 1000
+      time-to-live-seconds: 5
+  reliable-topic:
+    logs-file:
+      topic-overload-policy: BLOCK
   cluster-name: tutorial-jet-starter
   network:
     join:

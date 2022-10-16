@@ -3,6 +3,7 @@ package demo.jet.logsjetreceiver;
 import com.hazelcast.collection.IList;
 import com.hazelcast.core.Hazelcast;
 import com.hazelcast.core.HazelcastInstance;
+import com.hazelcast.topic.ITopic;
 import org.apache.commons.lang3.ArrayUtils;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,6 +13,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -26,9 +28,11 @@ public class LogsJetReceiverApplication {
     SpringApplication.run(LogsJetReceiverApplication.class, args);
   }
 
-  @GetMapping("/file")
-  public ResponseEntity<ByteArrayResource> getFile() {
+  @GetMapping("/file/{filename}")
+  public ResponseEntity<ByteArrayResource> getFileByName(@PathVariable String filename) {
     HazelcastInstance hz = Hazelcast.newHazelcastInstance();
+    ITopic<String> topic = hz.getReliableTopic("logs-file");
+    topic.publish(filename);
 
     IList<Byte> array = hz.getList(FILE_LIST);
 
@@ -40,7 +44,7 @@ public class LogsJetReceiverApplication {
         .contentLength(resource.contentLength())
         .header(HttpHeaders.CONTENT_DISPOSITION,
             ContentDisposition.attachment()
-                .filename("test")
+                .filename(filename)
                 .build().toString())
         .body(resource);
   }
