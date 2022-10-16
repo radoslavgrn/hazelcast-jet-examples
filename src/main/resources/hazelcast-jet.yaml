@@ -1,5 +1,0 @@
-hazelcast-jet:
-  instance:
-    cooperative-thread-count: 4
-  edge-defaults:
-    queue-size: 2048
