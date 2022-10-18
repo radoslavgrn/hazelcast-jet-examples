@@ -3,6 +3,7 @@ package demo.jet.logsjetreceiver;
 import com.hazelcast.collection.IList;
 import com.hazelcast.core.Hazelcast;
 import com.hazelcast.core.HazelcastInstance;
+import com.hazelcast.flakeidgen.FlakeIdGenerator;
 import com.hazelcast.topic.ITopic;
 import org.apache.commons.lang3.ArrayUtils;
 import org.springframework.boot.SpringApplication;
@@ -31,10 +32,12 @@ public class LogsJetReceiverApplication {
   @GetMapping("/file/{filename}")
   public ResponseEntity<ByteArrayResource> getFileByName(@PathVariable String filename) {
     HazelcastInstance hz = Hazelcast.newHazelcastInstance();
+    FlakeIdGenerator idGenerator = hz.getFlakeIdGenerator("random-id");
     ITopic<String> topic = hz.getReliableTopic("logs-file");
-    topic.publish(filename);
+    long fakeId = idGenerator.newId();
+    topic.publish(filename + ";" + fakeId);
 
-    IList<Byte> array = hz.getList(FILE_LIST);
+    IList<Byte> array = hz.getList(FILE_LIST + fakeId);
 
     Byte[] bytes = array.toArray(new Byte[0]);
 
