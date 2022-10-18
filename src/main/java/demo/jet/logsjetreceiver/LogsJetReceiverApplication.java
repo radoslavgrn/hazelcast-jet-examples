@@ -35,7 +35,11 @@ public class LogsJetReceiverApplication {
     FlakeIdGenerator idGenerator = hz.getFlakeIdGenerator("random-id");
     ITopic<String> topic = hz.getReliableTopic("logs-file");
     long fakeId = idGenerator.newId();
+    // publish an object with file name and unique id in order to create a list for every file
+    // downloaded even if it's the same within many requests
     topic.publish(filename + ";" + fakeId);
+
+    // need to evict these lists from hazelcast server/cluster after every successfully download
 
     IList<Byte> array = hz.getList(FILE_LIST + fakeId);
 
